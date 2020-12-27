@@ -12,8 +12,8 @@
 	$mail->isSMTP();                   // Отправка через SMTP
 	$mail->Host   = 'smtp.mail.ru';  // Адрес SMTP сервера
 	$mail->SMTPAuth   = true;          // Enable SMTP authentication
-	$mail->Username   = 'baboshin20@inbox.ru';       // ваше имя пользователя 
-	$mail->Password   = '26081990Dbnfkbq';    // ваш пароль
+	$mail->Username   = '**********';       // ваше имя пользователя 
+	$mail->Password   = '**********';    // ваш пароль
 	$mail->SMTPSecure = 'ssl';         // шифрование ssl
 	$mail->Port   = 465;   
 
@@ -22,9 +22,9 @@
     $mail->IsHTML(true);
 
     //От кого письмо
-    $mail->setFrom('baboshin20@inbox.ru','Пробная почта PHPMailer');
+    $mail->setFrom('*********','Пробная почта PHPMailer');
     //Кому отправить
-    $mail->addAddress('vitaliy2@ro.ru');
+    $mail->addAddress('**********');
     //Тема письма
     $mail->Subject = 'Привет! это я BrainLove';
 
