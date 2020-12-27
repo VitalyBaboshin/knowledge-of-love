@@ -1,0 +1,56 @@
+html {
+  box-sizing: border-box;
+}
+
+*,*::before, *::after {
+  box-sizing: inherit;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-size: inherit;
+}
+
+p {
+  margin: 0;
+}
+body {
+  min-width: 320px;
+  overflow-x: hidden;
+  position: relative;
+  margin: 0 auto;
+  color: #FFFFFF;
+  //шрифт
+  @extend %roboto-normal;
+  font-size: 24px;
+  line-height: 28px;
+  @media (max-width: 1030px) {
+    font-size: 20px;
+    line-height: 23px;
+  }
+}
+
+.container {
+  max-width: 1260px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.container--mini {
+  @media (max-width: 768px) {
+    padding: 0;
+  }
+}
+//.container-content {
+//}
+

@@ -1,0 +1,133 @@
+/* Слайдер */
+.slick-slider{
+  //min-width: 0;
+}
+/* Ограничивающая оболочка */
+.slick-list {
+  //overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+  //display: flex;
+  //align-items: flex-start;
+  @media (max-width: 768px) {
+    transform: translate3d(-481px, 0px, 0px);
+  }
+  @media (max-width: 480px) {
+    transform: translate3d(-625px, 0px, 0px);
+  }
+}
+
+/* Слайд */
+.slick-slide{
+  margin: 0 22px;
+  @media (max-width: 1000px) {
+    margin: 0 10px;
+  }
+}
+
+/* Слайд активный */
+.slick-slide.slick-active{
+}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+
+/* Стрелка */
+.slick-arrow{
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev{
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next{}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+
+/* Точки */
+.slick-dots{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -5px;
+  @media (max-width: 1000px) {
+    margin-top: 0px;
+  }
+}
+.slick-dots li{
+  margin: 0 5px;
+}
+.slick-dots button{
+  font-size: 0;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #FFFFFF;
+  border-radius: 50%;
+  background: #EA3838;
+  opacity: 0.4;
+}
+.slick-dots li.slick-active button{
+  opacity: unset;
+}
+/* Конкретный слайдер */
+.slider {
+  //position: relative;
+  //padding: 0px 60px;
+}
+
+//@media (max-width:767px){
+//  .slider {
+//    padding: 0px 40px;
+//  }
+//}
+//
+//.slider .slick-arrow{
+//  position: absolute;
+//  top: 50%;
+//  margin: -30px 0px 0px 0px;
+//  z-index: 10;
+//  font-size: 0;
+//  width: 30px;
+//  height: 60px;
+//}
+//.slider .slick-arrow.slick-prev{
+//  left: 0;
+//  background: url('../img/sl-arrow_l.svg') 0 0 / 100% no-repeat;
+//}
+//.slider .slick-arrow.slick-next{
+//  right: 0;
+//  background: url('../img/sl-arrow_r.svg') 0 0 / 100% no-repeat;
+//}
+//.slider .slick-arrow.slick-disabled{
+//  opacity: 0.2;
+//}
+//
+//.slider .slick-dots{
+//  display: flex;
+//  align-items: center;
+//  justify-content: center;
+//}
+//.slider .slick-dots li{
+//  list-style: none;
+//  margin: 0px 10px;
+//}
+//.slider .slick-dots button{
+//  font-size: 0;
+//  width: 10px;
+//  height: 10px;
+//  background-color: #fff;
+//  border-radius: 50%;
+//}
+//
+
+//
+//.slider__item {
+//  padding: 0px 15px;
+//}
+//.slider__item img{
+//  max-width: 100%;
+//}
+//.slider__item.slick-center{
+//
+//}

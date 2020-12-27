@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+<form class="contact-form" id="contact-form_1" method="POST" enctype="multipart/form-data">
+    <p class="contact-form__title">Заполни заявку</p>
+    <p class="contact-form__description"></p>
+    <div class="contact-form__row">
+        <div class="contact-form__input-wrapper">
+            <input name="name" type="text" class="contact-form__input contact-form__input_name" placeholder="Имя">
+            <div class="contact-form__error contact-form__error_name"></div>
+        </div>
+        <div class="contact-form__input-wrapper">
+            <input name="subject" type="text" class="contact-form__input contact-form__input_subject" placeholder="Предмет">
+            <div class="contact-form__error contact-form__error_subject"></div>
+        </div>
+    </div>
+
+    <div class="contact-form__input-wrapper">
+        <input name="tel" type="tel" class="contact-form__input contact-form__input_tel" placeholder="Тел.">
+        <div class="contact-form__error contact-form__error_tel"></div>
+    </div>
+
+    <div class="contact-form__input-wrapper">
+        <input name="email" type="email" class="contact-form__input contact-form__input_email" placeholder="Email">
+        <div class="contact-form__error contact-form__error_email"></div>
+    </div>
+
+    <div class="contact-form__custom-checkbox">
+        <input type="checkbox" name="agree" class="contact-form-input-checkbox" id="customCheck">
+        <label class="contact-form-label-checkbox" for="customCheck">согласие на обработку персональных данных</label>
+    </div>
+
+    <button class="contact-form__button" type="submit"> Отправить </button>
+</form>
+</body>
+</html>
